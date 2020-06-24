@@ -1,13 +1,14 @@
 function largestOfFour(arr) {
     let bigArr = [];
     for (let i = 0; i < arr.length; i++){
-        bigArr.push(-Infinity);
+        bigArr.push(arr[i][0]); // add the first element of each subarray as the largest number
         for (let j = 0; j < arr[i].length; j++){
             if (arr[i][j] > bigArr[i]){
                 bigArr[i] = arr[i][j];
             }
         }
     }
+    console.log(bigArr);
     return bigArr;
 }
 
