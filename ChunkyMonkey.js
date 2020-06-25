@@ -4,7 +4,6 @@ returns them as a two-dimensional array.
  */
 
 function chunkArrayInGroups(arr, size) {
-    //console.log(arr.splice(2, 1));
     for (let i = 0; i < arr.length; i++){
         arr.unshift(arr.splice(i, size));
     }
@@ -13,4 +12,6 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
-chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3)
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4);
+chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2);
